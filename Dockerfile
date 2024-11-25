@@ -1,6 +1,8 @@
 # 使用 WildFly 19.1 基础镜像
-FROM quay.io/k.jing.wei.huang/wildfly-http2
+FROM docker.io/jboss/wildfly:19.1.0.Final
 
+
+USER root
 # 创建 SSL 目录并复制证书
 RUN mkdir -p /opt/jboss/wildfly/ssl
 COPY ssl/application.keystore /opt/jboss/wildfly/ssl/
