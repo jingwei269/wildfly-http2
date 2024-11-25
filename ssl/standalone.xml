@@ -485,7 +485,7 @@
                 <host name="default-host" alias="localhost">
                     <location name="/" handler="welcome-content"/>
 		    <http-invoker security-realm="ApplicationRealm"/>
-		    <access-log  prefix="access" pattern="%h %t %U%q %m %s %b %T"/>
+		    <access-log  prefix="access" pattern="%h %t %U%q %m %s %b %T %r"/>
                 </host>
             </server>
             <servlet-container name="default">
